@@ -2,13 +2,13 @@
  * For a detailed explanation regarding each configuration property, visit:
  * https://jestjs.io/docs/configuration
  */
-const nextJest = require('next/jest')
+const nextJest = require("next/jest");
 
 /** @type {import('jest').Config} */
 const createJestConfig = nextJest({
   // Provide the path to your Next.js app to load next.config.js and .env files in your test environment
-  dir: './',
-})
+  dir: "./",
+});
 
 /** @type {import('jest').Config} */
 const config = {
@@ -202,4 +202,4 @@ const config = {
   // watchman: true,
 };
 
-module.exports = createJestConfig(config)
+module.exports = createJestConfig(config);
