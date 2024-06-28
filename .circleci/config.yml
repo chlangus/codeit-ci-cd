@@ -10,12 +10,12 @@ jobs:
   cypress-run:
     executor:
       name: cypress/default
-      node-version: '18.17.0'
+      node-version: "18.17.0"
     steps:
       - cypress/install
       - cypress/run-tests:
           # "run" job comes from "cypress" orb
-          start-command: "npm run start"
+          start-command: "npm install & npm run start"
 workflows:
   build:
     jobs:
