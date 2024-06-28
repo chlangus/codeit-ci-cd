@@ -8,8 +8,9 @@ orbs:
 
 jobs:
   cypress-run:
-    docker:
-      - image: "node:18.17.0"
+    executor:
+      docker:
+        - image: cimg/node:18.17.0
     steps:
       - cypress/install
       - cypress/run-tests:
