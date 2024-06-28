@@ -15,7 +15,7 @@ jobs:
       - cypress/install
       - cypress/run-tests:
           # "run" job comes from "cypress" orb
-          start-command: "npm install & npm run start"
+          start-command: "npm run next build & npm run start"
 workflows:
   build:
     jobs:
