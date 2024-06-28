@@ -9,8 +9,8 @@ orbs:
 jobs:
   cypress-run:
     executor:
-      docker:
-        - image: 'node:18.17.0'
+      name: cypress/default
+      node-version: '18.17.0'
     steps:
       - cypress/install
       - cypress/run-tests:
