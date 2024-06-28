@@ -15,7 +15,7 @@ jobs:
       - cypress/install
       - cypress/run-tests:
           # "run" job comes from "cypress" orb
-          start-command: "npm run start"
+          start-command: "npm run dev"
           cypress-command: "npx wait-on@latest http://localhost:3000 && npx cypress run"
 workflows:
   build:
